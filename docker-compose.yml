@@ -1,0 +1,10 @@
+version: "3"
+services:
+  db:
+    build: ./docker/db
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: dvdrental
+    ports:
+      - "5432:5432"
